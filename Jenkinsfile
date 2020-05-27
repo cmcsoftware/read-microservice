@@ -14,7 +14,7 @@ node{
 		sh 'docker build -t bunicool/read-microservice .'
 	}
 	stage ('docker image run') {
-		sh 'docker run -d -p 8081:8080 --name read bunicool/read-microservice'
+		sh 'docker run -d -p 8082:8080 --name read bunicool/read-microservice'
 	}
 	
 }	
